@@ -19,7 +19,7 @@ main {
 
     gap: 16rem;
 
-    height: 90vh;
+    height: auto;
 }
 
 .senha-container {
@@ -27,11 +27,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    
 
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 1rem;
+    // border: 2px solid black;
+    // border-radius: 8px;
+    
+    padding: 0;
 
     height: auto;
 
@@ -93,6 +94,12 @@ main {
         font-size: 1.5rem;
     }
 }
+.separation {
+    text-align: center;
+    p {
+        padding-bottom: 4rem;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     main {
@@ -117,7 +124,7 @@ main {
     }
 
     #senhaContainer {
-      position: absolute;
+      position: relative;
       left: 0;
       top: 0;
     }

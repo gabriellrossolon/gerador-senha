@@ -2,6 +2,7 @@
 function imprimir() {
     setTimeout(function(){
         window.print();
+        window.print();
     }, 1000);
 
     document.getElementById('btnProximaSenha').disabled = true;

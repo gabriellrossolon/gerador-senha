@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/ticket-solid.svg" type="image/x-icon">
     <title>Gerador de Senha</title>
 
     <link rel="stylesheet" href="./styles/style.css">
@@ -13,6 +15,9 @@
             <button class="btn-reset" id="resetarSenha" onclick="limparLocalStorage()">Resetar Senha</button>
         </div>
         <div class="senha-container" id="senhaContainer">
+            <div class="logo">
+                <img src="./assets/logo asstra png.jpg" alt="Logo Asstramed">
+            </div>
             <div class="senha">
                 <h1>Senha:</h1>
                 <h2 id="contadorSenhas">000</h2>
@@ -20,6 +25,9 @@
             <div class="data">
                 <p>Dia: <strong id="dataAtual"></strong></p>
                 <p>Hora: <strong id="horarioAtual"></strong></p>
+            </div>
+            <div class="separation">
+                <p>__________________________</p>
             </div>
         </div>
         <div> 
