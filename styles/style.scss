@@ -21,7 +21,7 @@ main {
 
     height: auto;
 
-    margin: 4rem 0;
+    // margin: 1rem 0;
 }
 
 .senha-container {
@@ -34,11 +34,12 @@ main {
     // border: 2px solid black;
     // border-radius: 8px;
     
-    padding: 0;
+    // padding: 4rem;
+    // padding-left: 12rem;
 
     height: auto;
 
-    gap: 2rem;
+    gap: 1rem;
 
 }
 
@@ -149,7 +150,7 @@ main {
 
     #senhaContainer {
       position: relative;
-      left: 0;
-      top: 0;
+    //   left: 8px;
+    //   top: 0;
     }
   }
