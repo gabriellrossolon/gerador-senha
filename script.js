@@ -10,7 +10,7 @@ function imprimir() {
       // Configura um timer para reativar o botão após 5 segundos
       setTimeout(function() {
         document.getElementById('btnProximaSenha').disabled = false;
-      }, 5000);
+      }, 3000);
     
 }
 
@@ -23,15 +23,28 @@ setTimeout(function() {
 let contador = localStorage.getItem('contadorSenhas') || 0;
 
 // Atualiza o elemento h2 com o valor inicial do contador
-document.getElementById('contadorSenhas').textContent = pad(contador, 3);
+document.getElementById('contadorSenhas').textContent = pad(contador, 2);
 
 // Função para incrementar o contador e atualizar o elemento h2
 function proximaSenha() {
     contador++;
-    document.getElementById('contadorSenhas').textContent = pad(contador, 3);
+    document.getElementById('contadorSenhas').textContent = pad(contador, 2);
 
     // Salva o valor do contador na localStorage
     localStorage.setItem('contadorSenhas', contador);
+}
+
+// Função para voltar a senha anterior
+function voltarSenha() {
+  if (contador > 0){
+    contador--;
+  } else {
+    return
+  }
+  document.getElementById('contadorSenhas').textContent = pad(contador, 2);
+
+  // Salva o valor do contador na localStorage
+  localStorage.setItem('contadorSenhas', contador);
 }
 
 // Função para garantir que o número seja sempre exibido com 3 dígitos

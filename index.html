@@ -11,8 +11,9 @@
 </head>
 <body>
     <main>
-        <div>
+        <div class="buttons-left">
             <button class="btn-reset" id="resetarSenha" onclick="limparLocalStorage()">Resetar Senha</button>
+            <button class="btn-rollback" id="voltarSenha" onclick="voltarSenha()">Voltar Senha</button>
         </div>
         <div class="senha-container" id="senhaContainer">
             <div class="logo">
@@ -26,9 +27,9 @@
                 <p>Dia: <strong id="dataAtual"></strong></p>
                 <p>Hora: <strong id="horarioAtual"></strong></p>
             </div>
-            <div class="separation">
+            <!-- <div class="separation">
                 <p>__________________________</p>
-            </div>
+            </div> -->
         </div>
         <div> 
             <button class="btn-next" id="btnProximaSenha" onclick="imprimir()">Próxima Senha</button>
