@@ -83,7 +83,7 @@ document.getElementById('btnProximaSenha').addEventListener('click', proximaSenh
     var dataAtual = new Date();
 
     // Obtém as partes da data (dia, mês, ano)
-    var dia = dataAtual.getDate();
+    var dia = ("0" + (dataAtual.getDate())).slice(-2);
     var mes = ("0" + (dataAtual.getMonth() + 1)).slice(-2); // O mês começa do zero, então somamos 1
     var ano = dataAtual.getFullYear();
 
