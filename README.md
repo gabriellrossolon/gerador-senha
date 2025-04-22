@@ -4,8 +4,10 @@ Aplicação simples e funcional desenvolvida para uma empresa da área da saúde
 
 ## 🧩 Funcionalidades
 
-- Geração de senhas sequenciais (ex: A001, A002, A003...)
+- Geração de senhas sequenciais (ex: 01, 02, 03...)
 - Reset manual do contador
+- Voltar a senha anterior
+- Input rápido para impressão da senha
 - Interface simples e intuitiva para uso em balcões de recepção
 - Pronto para uso local ou em intranet
 
